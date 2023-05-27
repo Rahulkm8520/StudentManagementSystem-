@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: mauryaji
+    url: jdbc:oracle:thin:@localhost:1521:ORCL1
+    username: mauryaji
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  
+logging:
+  level:
+    org:
+     hibernate:
+            sql: DEBUG
